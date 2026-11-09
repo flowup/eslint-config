@@ -12,7 +12,7 @@ export default {
         ({ projectType }) =>
           projectType === 'library' || projectType === 'application',
       );
-      const scopes = [...projects].sort();
+      const scopes = projects.toSorted();
       return [RuleConfigSeverity.Error, 'always', scopes];
     },
     'type-enum': () => {
