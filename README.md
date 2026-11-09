@@ -10,7 +10,7 @@ Monorepo for [FlowUp](https://flowup.cz) ESLint packages.
 
 ## Packages
 
-| Package                                                                          | Description                                               |
-| :------------------------------------------------------------------------------- | :-------------------------------------------------------- |
+| Package                                                                     | Description                                          |
+| :-------------------------------------------------------------------------- | :--------------------------------------------------- |
 | [`@flowup/eslint-config`](./packages/eslint-config/README.md)               | Recommended ESLint presets by FlowUp                 |
 | [`@flowup/create-eslint-config`](./packages/create-eslint-config/README.md) | Interactive setup wizard for `@flowup/eslint-config` |
