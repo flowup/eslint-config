@@ -38,11 +38,11 @@ describe('resolvePeerDeps', () => {
     );
   });
 
-  it('should pin @code-pushup/eslint-config to a caret range of the installed version', () => {
+  it('should pin @flowup/eslint-config to a caret range of the installed version', () => {
     expect(resolvePeerDeps(['javascript'])).toEqual(
       expect.arrayContaining([
         expect.objectContaining({
-          name: '@code-pushup/eslint-config',
+          name: '@flowup/eslint-config',
           version: expect.stringMatching(/^\^\d+\.\d+\.\d+$/),
         }),
       ]),

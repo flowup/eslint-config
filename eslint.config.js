@@ -1,8 +1,8 @@
 // @ts-check
 
 import { includeIgnoreFile } from '@eslint/compat';
-import { defineConfig } from 'eslint/config';
 import nxPlugin from '@nx/eslint-plugin';
+import { defineConfig } from 'eslint/config';
 import * as jsoncParser from 'jsonc-eslint-parser';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -36,7 +36,7 @@ export default defineConfig(
           enforceBuildableLibDependency: true,
           allow: [
             String.raw`^.*/eslint\.config\.js$`,
-            '^@code-pushup/eslint-config$',
+            '^@flowup/eslint-config$',
           ],
           depConstraints: [{ sourceTag: '*', onlyDependOnLibsWithTags: ['*'] }],
         },

@@ -87,7 +87,7 @@ export default defineConfig(
   ...baseConfig,
   {
     files: ['**/*.ts'],
-    ignores: ['**/code-pushup.config.ts'],
+    ignores: ['**/flowup.config.ts'],
     languageOptions: {
       parserOptions: {
         projectService: true,
@@ -291,7 +291,7 @@ export async function importConfig(name) {
 }
 
 /**
- * Get all extended code-pushup configs from flat config.
+ * Get all extended flowup configs from flat config.
  * @param {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigArray} flatConfig Flat config array
  */
 export function extractCodePushUpConfigs(flatConfig) {
@@ -299,7 +299,7 @@ export function extractCodePushUpConfigs(flatConfig) {
     ...new Set(
       flatConfig
         .map(cfg => cfg.name)
-        .filter(name => name?.startsWith('code-pushup/'))
+        .filter(name => name?.startsWith('flowup/'))
         .map(name => name?.split('/')[1])
         .filter(name => name != null),
     ),

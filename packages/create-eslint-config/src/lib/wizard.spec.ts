@@ -75,9 +75,7 @@ describe('runSetupWizard', () => {
       'package.json',
     );
     expect(packageJson.devDependencies.eslint).toBeDefined();
-    expect(
-      packageJson.devDependencies['@code-pushup/eslint-config'],
-    ).toBeDefined();
+    expect(packageJson.devDependencies['@flowup/eslint-config']).toBeDefined();
   });
 
   test('should update existing package.json while preserving other fields', async ({

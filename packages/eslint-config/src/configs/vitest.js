@@ -5,18 +5,18 @@ import { defineConfig } from 'eslint/config';
 import { UNIT_TEST_FILE_PATTERNS } from '../lib/patterns.js';
 
 export default defineConfig({
-  name: 'code-pushup/vitest',
+  name: 'flowup/vitest',
   files: UNIT_TEST_FILE_PATTERNS,
   extends: [
     vitest.configs.recommended,
     {
-      name: 'code-pushup/vitest/globals',
+      name: 'flowup/vitest/globals',
       languageOptions: {
         globals: vitest.environments.env.globals,
       },
     },
     {
-      name: 'code-pushup/vitest/customized',
+      name: 'flowup/vitest/customized',
       rules: {
         'vitest/prefer-to-be': 'warn',
         ...('no-interpolation-in-snapshots' in vitest.rules && {
@@ -31,7 +31,7 @@ export default defineConfig({
       },
     },
     {
-      name: 'code-pushup/vitest/additional',
+      name: 'flowup/vitest/additional',
       rules: {
         // https://github.com/vitest-dev/eslint-plugin-vitest#rules
         'vitest/consistent-test-filename': [

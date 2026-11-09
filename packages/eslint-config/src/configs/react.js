@@ -13,7 +13,7 @@ import javascript from './javascript.js';
 const reactHooksPlugin = reactHooks;
 
 export default defineConfig(...javascript, {
-  name: 'code-pushup/react',
+  name: 'flowup/react',
   files: REACT_FILE_PATTERNS,
   languageOptions: {
     globals: globals.browser,
@@ -22,7 +22,7 @@ export default defineConfig(...javascript, {
     react.configs.flat.recommended ? [react.configs.flat.recommended] : [],
     jsxA11y.flatConfigs.recommended,
     {
-      name: 'code-pushup/react/react-hooks',
+      name: 'flowup/react/react-hooks',
       plugins: {
         'react-hooks': reactHooksPlugin,
       },
@@ -32,7 +32,7 @@ export default defineConfig(...javascript, {
       },
     },
     {
-      name: 'code-pushup/react/customized',
+      name: 'flowup/react/customized',
       rules: {
         'react/display-name': 'warn',
         'jsx-a11y/no-autofocus': 'warn',
@@ -40,7 +40,7 @@ export default defineConfig(...javascript, {
       },
     },
     {
-      name: 'code-pushup/react/additional',
+      name: 'flowup/react/additional',
       rules: {
         'react/button-has-type': 'error',
         'react/default-props-match-prop-types': 'error',

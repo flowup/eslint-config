@@ -2,7 +2,7 @@
 
 ### 🩹 Fixes
 
-- **eslint-config:** lint GraphQL in tagged templates and parse .graphql files ([ba5eba8](https://github.com/code-pushup/eslint-config/commit/ba5eba8))
+- **eslint-config:** lint GraphQL in tagged templates and parse .graphql files ([ba5eba8](https://github.com/flowup/eslint-config/commit/ba5eba8))
 
 ### ❤️ Thank You
 
@@ -12,7 +12,7 @@
 
 ### 🩹 Fixes
 
-- **eslint-config:** disable no-template-curly-in-string for .json files ([b93b60a](https://github.com/code-pushup/eslint-config/commit/b93b60a))
+- **eslint-config:** disable no-template-curly-in-string for .json files ([b93b60a](https://github.com/flowup/eslint-config/commit/b93b60a))
 
 ### ❤️ Thank You
 
@@ -22,7 +22,7 @@
 
 ### 🩹 Fixes
 
-- **eslint-config:** enable type-checked rules ([51cc25a](https://github.com/code-pushup/eslint-config/commit/51cc25a))
+- **eslint-config:** enable type-checked rules ([51cc25a](https://github.com/flowup/eslint-config/commit/51cc25a))
 
 ### ❤️ Thank You
 
@@ -32,7 +32,7 @@
 
 ### 🚀 Features
 
-- **create-eslint-config:** extend existing config ([#52](https://github.com/code-pushup/eslint-config/pull/52))
+- **create-eslint-config:** extend existing config ([#52](https://github.com/flowup/eslint-config/pull/52))
 
 ### ❤️ Thank You
 
@@ -42,7 +42,7 @@
 
 ### 🩹 Fixes
 
-- **create-eslint-config:** add license file ([a927994](https://github.com/code-pushup/eslint-config/commit/a927994))
+- **create-eslint-config:** add license file ([a927994](https://github.com/flowup/eslint-config/commit/a927994))
 
 ### ❤️ Thank You
 
@@ -52,7 +52,7 @@
 
 ### 🩹 Fixes
 
-- **create-eslint-config:** sync version with eslint-config ([55467ee](https://github.com/code-pushup/eslint-config/commit/55467ee))
+- **create-eslint-config:** sync version with eslint-config ([55467ee](https://github.com/flowup/eslint-config/commit/55467ee))
 
 ### ❤️ Thank You
 
@@ -62,8 +62,8 @@
 
 ### 🩹 Fixes
 
-- **create-eslint-config:** correct package metadata after monorepo migration and release ([4c3256d](https://github.com/code-pushup/eslint-config/commit/4c3256d))
-- **eslint-config:** correct package metadata after monorepo migration ([faf6d78](https://github.com/code-pushup/eslint-config/commit/faf6d78))
+- **create-eslint-config:** correct package metadata after monorepo migration and release ([4c3256d](https://github.com/flowup/eslint-config/commit/4c3256d))
+- **eslint-config:** correct package metadata after monorepo migration ([faf6d78](https://github.com/flowup/eslint-config/commit/faf6d78))
 
 ### ❤️ Thank You
 
@@ -73,8 +73,8 @@
 
 ### 🚀 Features
 
-- add support for NgRx 18 ([#23](https://github.com/code-pushup/eslint-config/pull/23))
-- **create-eslint-config:** implement setup wizard ([#51](https://github.com/code-pushup/eslint-config/pull/51))
+- add support for NgRx 18 ([#23](https://github.com/flowup/eslint-config/pull/23))
+- **create-eslint-config:** implement setup wizard ([#51](https://github.com/flowup/eslint-config/pull/51))
 
 ### ❤️ Thank You
 

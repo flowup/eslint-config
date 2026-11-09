@@ -211,7 +211,7 @@ function findRuleData(id, config, rules) {
     findRuleEntry(
       config.flatConfig.filter(
         ({ name }) =>
-          name?.startsWith('code-pushup/') &&
+          name?.startsWith('flowup/') &&
           (name.endsWith('/customized') || name.endsWith('/additional')),
       ),
       id,
@@ -254,7 +254,7 @@ function findRuleData(id, config, rules) {
 }
 
 /**
- * Get all extended code-pushup configs from flat config.
+ * Get all extended flowup configs from flat config.
  * @param {import('./helpers/types.js').ExportedConfig} config Exported config
  */
 function getExtendedConfigs(config) {
@@ -262,7 +262,7 @@ function getExtendedConfigs(config) {
     ...new Set(
       config.flatConfig
         .map(cfg => cfg.name)
-        .filter(name => name?.startsWith('code-pushup/'))
+        .filter(name => name?.startsWith('flowup/'))
         .map(name => name?.split('/')[1]?.split(' > ')[0])
         .filter(name => name != null),
     ),

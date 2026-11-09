@@ -4,7 +4,7 @@ Config for **React** projects.
 
 ## 🏗️ Setup
 
-1. If you haven't already, make sure to [install `@code-pushup/eslint-config` and its required peer dependencies](../README.md#🏗️-setup).
+1. If you haven't already, make sure to [install `@flowup/eslint-config` and its required peer dependencies](../README.md#🏗️-setup).
 2. Since this plugin requires additional peer dependencies, you have to install them as well:
 
    ```sh
@@ -14,7 +14,7 @@ Config for **React** projects.
 3. Add to your `eslint.config.js` file:
 
    ```js
-   import react from '@code-pushup/eslint-config/react.js';
+   import react from '@flowup/eslint-config/react.js';
    import { defineConfig } from 'eslint/config';
    
    export default defineConfig(...react);

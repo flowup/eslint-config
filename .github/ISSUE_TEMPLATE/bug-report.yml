@@ -25,7 +25,7 @@ body:
       description: Providing a set of concise steps that deterministically reproduce the behaviour helps us investigate what is going on.
       placeholder: |
         For example:
-        1. I imported `@code-pushup/eslint/javascript` in my `eslint.config.js`.
+        1. I imported `@flowup/eslint/javascript` in my `eslint.config.js`.
         2. I added explicit options to the `no-unused-vars` rule.
         3. When I opened the `index.ts` file, ESLint highlighted the `no-unused-vars` rule despite the variable `_unused` matching the pattern I explicitly set.
     validations:
@@ -63,7 +63,7 @@ body:
       description: What config version are you running? Include peer dependencies if applicable.
       placeholder: |
         For example:
-        `@code-pushup/eslint-config` version 0.12.0
+        `@flowup/eslint-config` version 0.12.0
 
         Peer dependencies:
         - `typescript-eslint` version 8.13.0

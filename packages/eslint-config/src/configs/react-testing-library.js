@@ -5,12 +5,12 @@ import { defineConfig } from 'eslint/config';
 import { UNIT_TEST_FILE_PATTERNS } from '../lib/patterns.js';
 
 export default defineConfig({
-  name: 'code-pushup/react-testing-library',
+  name: 'flowup/react-testing-library',
   files: UNIT_TEST_FILE_PATTERNS,
   extends: [
     rtl.configs['flat/react'],
     {
-      name: 'code-pushup/react-testing-library/customized',
+      name: 'flowup/react-testing-library/customized',
       rules: {
         'testing-library/no-await-sync-events': 'warn',
         'testing-library/no-await-sync-queries': 'warn',
@@ -27,7 +27,7 @@ export default defineConfig({
       },
     },
     {
-      name: 'code-pushup/react-testing-library/additional',
+      name: 'flowup/react-testing-library/additional',
       rules: {
         'testing-library/prefer-explicit-assert': 'warn',
         'testing-library/prefer-query-matchers': [

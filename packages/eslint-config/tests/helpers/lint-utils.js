@@ -26,7 +26,7 @@ export function createLintUtils(
     await fs.mkdir(cwd, { recursive: true });
     await fs.writeFile(
       path.join(cwd, 'eslint.config.js'),
-      `import ${camelCaseConfig} from '@code-pushup/eslint-config/${configName}.js'
+      `import ${camelCaseConfig} from '@flowup/eslint-config/${configName}.js'
 
 export default [
   ...${camelCaseConfig},

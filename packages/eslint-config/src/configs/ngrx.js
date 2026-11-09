@@ -10,11 +10,11 @@ import angular from './angular.js';
 const ngrxPlugin = ngrx;
 
 export default defineConfig(...angular, {
-  name: 'code-pushup/ngrx',
+  name: 'flowup/ngrx',
   files: TYPESCRIPT_FILE_PATTERNS,
   extends: [
     {
-      name: 'code-pushup/ngrx/ngrx',
+      name: 'flowup/ngrx/ngrx',
       plugins: {
         '@ngrx': ngrxPlugin,
       },
@@ -55,7 +55,7 @@ export default defineConfig(...angular, {
       },
     },
     {
-      name: 'code-pushup/ngrx/rjxs',
+      name: 'flowup/ngrx/rjxs',
       rules: {
         // https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x#rules
         'rxjs-x/no-unsafe-catch': 'error',

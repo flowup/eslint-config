@@ -1,18 +1,18 @@
-# @code-pushup/create-eslint-config
+# @flowup/create-eslint-config
 
-[![npm](https://img.shields.io/npm/v/%40code-pushup%2Fcreate-eslint-config.svg)](https://www.npmjs.com/package/@code-pushup/create-eslint-config)
-[![downloads](https://img.shields.io/npm/dm/%40code-pushup%2Fcreate-eslint-config)](https://npmtrends.com/@code-pushup/create-eslint-config)
-[![dependencies](https://img.shields.io/librariesio/release/npm/%40code-pushup/create-eslint-config)](https://www.npmjs.com/package/@code-pushup/create-eslint-config?activeTab=dependencies)
-[![license](https://img.shields.io/npm/l/%40code-pushup%2Fcreate-eslint-config)](https://opensource.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/v/%40flowup%2Fcreate-eslint-config.svg)](https://www.npmjs.com/package/@flowup/create-eslint-config)
+[![downloads](https://img.shields.io/npm/dm/%40flowup%2Fcreate-eslint-config)](https://npmtrends.com/@flowup/create-eslint-config)
+[![dependencies](https://img.shields.io/librariesio/release/npm/%40flowup/create-eslint-config)](https://www.npmjs.com/package/@flowup/create-eslint-config?activeTab=dependencies)
+[![license](https://img.shields.io/npm/l/%40flowup%2Fcreate-eslint-config)](https://opensource.org/licenses/MIT)
 
-Interactive setup wizard for [`@code-pushup/eslint-config`](../eslint-config/README.md).
+Interactive setup wizard for [`@flowup/eslint-config`](../eslint-config/README.md).
 
 ## Usage
 
 ### Quick start
 
 ```sh
-npm init @code-pushup/eslint-config
+npm init @flowup/eslint-config
 ```
 
 The wizard will:
@@ -28,7 +28,7 @@ The wizard will:
 Use `--yes` to skip all prompts and accept detected defaults:
 
 ```sh
-npm init @code-pushup/eslint-config -- --yes
+npm init @flowup/eslint-config -- --yes
 ```
 
 ### Options
@@ -45,7 +45,7 @@ npm init @code-pushup/eslint-config -- --yes
 ### Programmatic API
 
 ```ts
-import { runSetupWizard } from '@code-pushup/create-eslint-config';
+import { runSetupWizard } from '@flowup/create-eslint-config';
 
 const result = await runSetupWizard({
   targetDir: process.cwd(),

@@ -88,11 +88,11 @@ function basicSetupDocs(peerDeps) {
             .map(({ pkg }) => pkg),
         )}`,
       )}`,
-      md`Install ${md.code('@code-pushup/eslint-config')} with:${md.codeBlock('sh', 'npm install -D @code-pushup/eslint-config')}`,
+      md`Install ${md.code('@flowup/eslint-config')} with:${md.codeBlock('sh', 'npm install -D @flowup/eslint-config')}`,
       md`Include default config in your ${md.link('https://eslint.org/docs/latest/use/configure/configuration-files', 'ESLint configuration file')} (usually ${md.code('eslint.config.js')}):${md.codeBlock(
         'js',
         [
-          "import javascript from '@code-pushup/eslint-config/javascript.js';",
+          "import javascript from '@flowup/eslint-config/javascript.js';",
           "import { defineConfig } from 'eslint/config';",
           '',
           'export default defineConfig(...javascript);',
@@ -116,7 +116,7 @@ function peerDepsDocs(peerDeps) {
     .heading(4, '📦 Peer dependencies')
     .paragraph(
       md`All peer dependencies used by ${md.code(
-        '@code-pushup/eslint-config',
+        '@flowup/eslint-config',
       )} are listed below, along with their supported versions. Only the default config's dependencies are required, others are optional.`,
     )
     .table(

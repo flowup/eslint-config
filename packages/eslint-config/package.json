@@ -1,7 +1,7 @@
 {
-  "name": "@code-pushup/eslint-config",
+  "name": "@flowup/eslint-config",
   "version": "0.17.3",
-  "description": "Recommended ESLint presets by Code PushUp",
+  "description": "Recommended ESLint presets by FlowUp",
   "publishConfig": {
     "access": "public"
   },
@@ -17,21 +17,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/code-pushup/eslint-config.git",
+    "url": "git+https://github.com/flowup/eslint-config.git",
     "directory": "packages/eslint-config"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "styleguide",
-    "code-pushup"
+    "flowup"
   ],
   "author": "Matěj Chalk <matej.chalk@flowup.cz>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/code-pushup/eslint-config/issues?q=is%3Aissue%20state%3Aopen%20type%3ABug%20label%3A\"🧩%20eslint-config\""
+    "url": "https://github.com/flowup/eslint-config/issues?q=is%3Aissue%20state%3Aopen%20type%3ABug%20label%3A\"🧩%20eslint-config\""
   },
-  "homepage": "https://github.com/code-pushup/eslint-config/tree/main/packages/eslint-config#readme",
+  "homepage": "https://github.com/flowup/eslint-config/tree/main/packages/eslint-config#readme",
   "peerDependencies": {
     "@eslint/js": "^9.0.0",
     "@graphql-eslint/eslint-plugin": "^3.0.0 || ^4.0.0",

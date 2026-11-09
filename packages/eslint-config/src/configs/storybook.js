@@ -4,7 +4,7 @@ import storybook from 'eslint-plugin-storybook';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig({
-  name: 'code-pushup/storybook',
+  name: 'flowup/storybook',
   // @ts-expect-error incompatible rules types (create function's context parameter)
   extends: [
     ...storybook.configs['flat/recommended'],

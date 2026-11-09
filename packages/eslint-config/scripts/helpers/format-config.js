@@ -17,7 +17,7 @@ const setupLink = '../README.md#🏗️-setup';
  * Format Markdown documentation for given config.
  * @param {import('./types.js').ConfigName} config Config name
  * @param {import('./types.js').RuleData[]} rules List of rules included in config
- * @param {import('./types.js').ExtendedConfig[]} extended List of extended Code PushUp configs
+ * @param {import('./types.js').ExtendedConfig[]} extended List of extended FlowUp configs
  * @param {import('./types.js').PeerDep[]} peerDeps Peer dependencies
  * @param {{hideOverrides?: boolean}} options Extra options
  */
@@ -64,7 +64,7 @@ function setupDocs(config, peerDeps) {
       doc.list('ordered', [
         md`If you haven't already, make sure to ${md.link(
           setupLink,
-          md`install ${md.code('@code-pushup/eslint-config')} and its required peer dependencies`,
+          md`install ${md.code('@flowup/eslint-config')} and its required peer dependencies`,
         )}.`,
         ...(dependencies.length > 0
           ? [
@@ -77,7 +77,7 @@ function setupDocs(config, peerDeps) {
         md`Add to your ${md.code('eslint.config.js')} file:${md.codeBlock(
           'js',
           [
-            `import ${config} from '@code-pushup/eslint-config/${config}.js';`,
+            `import ${config} from '@flowup/eslint-config/${config}.js';`,
             "import { defineConfig } from 'eslint/config';",
             '',
             ...(configsExtraEslintrc[config]
@@ -98,7 +98,7 @@ function setupDocs(config, peerDeps) {
  * Generate docs on rules included in given config
  * @param {import('./types.js').ConfigName} config Config name
  * @param {import('./types.js').RuleData[]} rules List of rules included in config
- * @param {import('./types.js').ExtendedConfig[]} extended List of extended Code PushUp configs
+ * @param {import('./types.js').ExtendedConfig[]} extended List of extended FlowUp configs
  * @param {{hideOverrides?: boolean}} options Extra options
  */
 function rulesDocs(config, rules, extended, options) {

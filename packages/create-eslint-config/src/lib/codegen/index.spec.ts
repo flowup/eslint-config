@@ -1,13 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { WizardError } from '../errors.js';
-import { generateEslintConfig, extendEslintConfig } from './index.js';
+import { extendEslintConfig, generateEslintConfig } from './index.js';
 
 describe('generateEslintConfig', () => {
   it('should render a javascript-only config', async () => {
     const source = await generateEslintConfig(['javascript']);
     expect(source).toMatchInlineSnapshot(`
       "import { defineConfig } from 'eslint/config';
-      import javascript from '@code-pushup/eslint-config/javascript.js';
+      import javascript from '@flowup/eslint-config/javascript.js';
       export default defineConfig(...javascript);
       "
     `);
@@ -19,7 +19,7 @@ describe('generateEslintConfig', () => {
     });
     expect(source).toMatchInlineSnapshot(`
       "import { defineConfig } from 'eslint/config';
-      import typescript from '@code-pushup/eslint-config/typescript.js';
+      import typescript from '@flowup/eslint-config/typescript.js';
       export default defineConfig(
         ...typescript,
         {
@@ -73,7 +73,7 @@ describe('generateEslintConfig', () => {
   it('should camelCase hyphenated slugs into valid JS identifiers', async () => {
     const source = await generateEslintConfig(['react-testing-library']);
     expect(source).toContain(
-      "import reactTestingLibrary from '@code-pushup/eslint-config/react-testing-library.js';",
+      "import reactTestingLibrary from '@flowup/eslint-config/react-testing-library.js';",
     );
     expect(source).toContain('...reactTestingLibrary');
   });
@@ -110,7 +110,7 @@ describe('extendEslintConfig', () => {
       .toMatchInlineSnapshot(`
         "import { defineConfig } from 'eslint/config';
 
-        import javascript from '@code-pushup/eslint-config/javascript.js';
+        import javascript from '@flowup/eslint-config/javascript.js';
 
         export default defineConfig({ rules: { 'no-console': 'warn' } }, ...javascript);
         "
@@ -131,7 +131,7 @@ describe('extendEslintConfig', () => {
       .toMatchInlineSnapshot(`
         "import tseslint from 'typescript-eslint';
 
-        import javascript from '@code-pushup/eslint-config/javascript.js';
+        import javascript from '@flowup/eslint-config/javascript.js';
 
         export default tseslint.config(
           { rules: { 'no-console': 'warn' } },
@@ -153,7 +153,7 @@ describe('extendEslintConfig', () => {
 
     await expect(extendEslintConfig(source, ['javascript'])).resolves
       .toMatchInlineSnapshot(`
-        "import javascript from '@code-pushup/eslint-config/javascript.js';
+        "import javascript from '@flowup/eslint-config/javascript.js';
         export default [
           {
             files: ['**/*.js'],
@@ -176,8 +176,8 @@ describe('extendEslintConfig', () => {
     expect(first).toMatchInlineSnapshot(`
       "import { defineConfig } from 'eslint/config';
 
-      import javascript from '@code-pushup/eslint-config/javascript.js';
-      import vitest from '@code-pushup/eslint-config/vitest.js';
+      import javascript from '@flowup/eslint-config/javascript.js';
+      import vitest from '@flowup/eslint-config/vitest.js';
 
       export default defineConfig(...javascript, ...vitest);
       "
@@ -200,7 +200,7 @@ describe('extendEslintConfig', () => {
     expect(first).toMatchInlineSnapshot(`
       "import { defineConfig } from 'eslint/config';
 
-      import typescript from '@code-pushup/eslint-config/typescript.js';
+      import typescript from '@flowup/eslint-config/typescript.js';
 
       export default defineConfig(
         ...typescript,
@@ -269,7 +269,7 @@ describe('extendEslintConfig', () => {
         "// my project rules
         import { defineConfig } from 'eslint/config';
 
-        import javascript from '@code-pushup/eslint-config/javascript.js';
+        import javascript from '@flowup/eslint-config/javascript.js';
 
         // keep this comment
         export default defineConfig(
@@ -301,7 +301,7 @@ describe('extendEslintConfig', () => {
 
   it('should reuse an existing aliased import instead of duplicating it', async () => {
     const source = [
-      "import jsConfig from '@code-pushup/eslint-config/javascript.js';",
+      "import jsConfig from '@flowup/eslint-config/javascript.js';",
       "import { defineConfig } from 'eslint/config';",
       '',
       'export default defineConfig(',
@@ -312,7 +312,7 @@ describe('extendEslintConfig', () => {
 
     await expect(extendEslintConfig(source, ['javascript'])).resolves
       .toMatchInlineSnapshot(`
-        "import jsConfig from '@code-pushup/eslint-config/javascript.js';
+        "import jsConfig from '@flowup/eslint-config/javascript.js';
         import { defineConfig } from 'eslint/config';
 
         export default defineConfig(...jsConfig);
@@ -335,7 +335,7 @@ describe('extendEslintConfig', () => {
       .toMatchInlineSnapshot(`
       "import { defineConfig } from 'eslint/config';
 
-      import javascript from '@code-pushup/eslint-config/javascript.js';
+      import javascript from '@flowup/eslint-config/javascript.js';
 
       export default defineConfig(
         // trailing note

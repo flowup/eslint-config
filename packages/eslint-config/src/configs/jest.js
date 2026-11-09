@@ -5,7 +5,7 @@ import { defineConfig } from 'eslint/config';
 import { UNIT_TEST_FILE_PATTERNS } from '../lib/patterns.js';
 
 export default defineConfig({
-  name: 'code-pushup/jest',
+  name: 'flowup/jest',
   files: UNIT_TEST_FILE_PATTERNS,
   extends: [
     jest.configs['flat/recommended'],
@@ -17,7 +17,7 @@ export default defineConfig({
       },
     },
     {
-      name: 'code-pushup/jest/customized',
+      name: 'flowup/jest/customized',
       rules: {
         'jest/no-alias-methods': 'warn',
         'jest/no-conditional-expect': 'warn',
@@ -30,7 +30,7 @@ export default defineConfig({
       },
     },
     {
-      name: 'code-pushup/jest/additional',
+      name: 'flowup/jest/additional',
       rules: {
         // https://github.com/jest-community/eslint-plugin-jest#rules
         'jest/consistent-test-it': 'warn',

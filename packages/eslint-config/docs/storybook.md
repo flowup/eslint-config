@@ -4,7 +4,7 @@ Config for projects using **Storybook** for UI components.
 
 ## 🏗️ Setup
 
-1. If you haven't already, make sure to [install `@code-pushup/eslint-config` and its required peer dependencies](../README.md#🏗️-setup).
+1. If you haven't already, make sure to [install `@flowup/eslint-config` and its required peer dependencies](../README.md#🏗️-setup).
 2. Since this plugin requires additional peer dependencies, you have to install them as well:
 
    ```sh
@@ -14,7 +14,7 @@ Config for projects using **Storybook** for UI components.
 3. Add to your `eslint.config.js` file:
 
    ```js
-   import storybook from '@code-pushup/eslint-config/storybook.js';
+   import storybook from '@flowup/eslint-config/storybook.js';
    import { defineConfig } from 'eslint/config';
    
    export default defineConfig(...storybook);

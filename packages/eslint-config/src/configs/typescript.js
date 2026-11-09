@@ -25,14 +25,14 @@ const tseslintRules =
 export default defineConfig(
   ...javascript,
   {
-    name: 'code-pushup/typescript',
+    name: 'flowup/typescript',
     files: TYPESCRIPT_EXTENDED_FILE_PATTERNS,
     extends: [
       ...tseslint.configs.recommendedTypeChecked,
       ...tseslint.configs.strictTypeChecked,
       importPlugin.flatConfigs.typescript,
       {
-        name: 'code-pushup/typescript/customized',
+        name: 'flowup/typescript/customized',
         rules: {
           '@typescript-eslint/no-confusing-void-expression': 'warn',
           '@typescript-eslint/no-meaningless-void-operator': 'warn',
@@ -64,7 +64,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/typescript/disabled',
+        name: 'flowup/typescript/disabled',
         rules: {
           '@typescript-eslint/unbound-method': 'off',
           '@typescript-eslint/no-unsafe-enum-comparison': 'off',
@@ -72,7 +72,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/typescript/additional',
+        name: 'flowup/typescript/additional',
         rules: {
           // https://typescript-eslint.io/rules/
           '@typescript-eslint/consistent-type-assertions': [
@@ -104,12 +104,12 @@ export default defineConfig(
     ],
   },
   {
-    name: 'code-pushup/typescript/tests',
+    name: 'flowup/typescript/tests',
     files: TEST_FILE_PATTERNS,
     ignores: negatePatterns(TYPESCRIPT_EXTENDED_FILE_PATTERNS),
     extends: [
       {
-        name: 'code-pushup/typescript/tests/disabled',
+        name: 'flowup/typescript/tests/disabled',
         rules: {
           '@typescript-eslint/no-explicit-any': 'off',
           '@typescript-eslint/no-unsafe-argument': 'off',
@@ -121,7 +121,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/typescript/tests/customized',
+        name: 'flowup/typescript/tests/customized',
         rules: {
           '@typescript-eslint/consistent-type-assertions': [
             'warn',
@@ -148,14 +148,14 @@ export default defineConfig(
     ],
   },
   {
-    name: 'code-pushup/javascript/configs/disabled',
+    name: 'flowup/javascript/configs/disabled',
     files: CONFIG_FILE_PATTERNS,
     rules: {
       'functional/immutable-data': 'off',
     },
   },
   {
-    name: 'code-pushup/typescript/storybook/customized',
+    name: 'flowup/typescript/storybook/customized',
     files: STORYBOOK_FILE_PATTERNS,
     ignores: negatePatterns(TYPESCRIPT_EXTENDED_FILE_PATTERNS),
     rules: {
@@ -166,7 +166,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/typescript/disable-type-checked-for-javascript',
+    name: 'flowup/typescript/disable-type-checked-for-javascript',
     ignores: TYPESCRIPT_EXTENDED_FILE_PATTERNS,
     ...tseslint.configs.disableTypeChecked,
   },

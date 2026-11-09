@@ -4,11 +4,11 @@ Config for strict **TypeScript** projects.
 
 ## 🏗️ Setup
 
-1. If you haven't already, make sure to [install `@code-pushup/eslint-config` and its required peer dependencies](../README.md#🏗️-setup).
+1. If you haven't already, make sure to [install `@flowup/eslint-config` and its required peer dependencies](../README.md#🏗️-setup).
 2. Add to your `eslint.config.js` file:
 
    ```js
-   import typescript from '@code-pushup/eslint-config/typescript.js';
+   import typescript from '@flowup/eslint-config/typescript.js';
    import { defineConfig } from 'eslint/config';
    
    export default defineConfig(...typescript);
@@ -27,7 +27,7 @@ Config for strict **TypeScript** projects.
        ...baseConfig,
        {
          files: ['**/*.ts'],
-         ignores: ['**/code-pushup.config.ts'],
+         ignores: ['**/flowup.config.ts'],
          languageOptions: {
            parserOptions: {
              projectService: true,

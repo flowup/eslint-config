@@ -17,7 +17,7 @@ export function resolvePeerDeps(slugs: string[]): PeerDep[] {
   const all: PeerDep[] = [
     ...BASE_PEER_DEPS,
     ...configDeps,
-    { name: '@code-pushup/eslint-config', version: `^${PACKAGE_VERSION}` },
+    { name: '@flowup/eslint-config', version: `^${PACKAGE_VERSION}` },
   ];
   const seen = new Set<string>();
   return all.filter(dep => {

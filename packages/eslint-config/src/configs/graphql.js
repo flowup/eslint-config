@@ -15,12 +15,12 @@ const v3FlatConfigs =
 export default defineConfig(
   ...node,
   {
-    name: 'code-pushup/graphql/node-files-processor',
+    name: 'flowup/graphql/node-files-processor',
     files: NODE_FILE_PATTERNS,
     processor: graphqlEslint.processors.graphql,
   },
   {
-    name: 'code-pushup/graphql',
+    name: 'flowup/graphql',
     files: GRAPHQL_FILE_PATTERNS,
     plugins: {
       // @ts-expect-error incompatible meta.docs.category type in rules (`CategoryType | CategoryType[]` not assignable to `string | undefined`)
@@ -34,7 +34,7 @@ export default defineConfig(
         graphqlEslint.configs['flat/schema-recommended'],
       v3FlatConfigs?.['relay'] ?? graphqlEslint.configs['flat/schema-relay'],
       {
-        name: 'code-pushup/graphql/customized',
+        name: 'flowup/graphql/customized',
         rules: {
           // https://the-guild.dev/graphql/eslint/rules
           '@graphql-eslint/description-style': ['warn', { style: 'inline' }],
@@ -46,7 +46,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/graphql/disabled',
+        name: 'flowup/graphql/disabled',
         rules: {
           '@graphql-eslint/strict-id-in-types': 'off',
         },

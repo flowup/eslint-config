@@ -40,7 +40,7 @@ export const BASE_PEER_DEPS: PeerDep[] = [
   { name: 'typescript-eslint', version: '^8.0.0' },
 ];
 
-// TODO: add a metadata subpath to code-pushup/eslint-config exporting the slug
+// TODO: add a metadata subpath to flowup/eslint-config exporting the slug
 // list, `extends` fields, and peerDeps (scripts/docs.js already derives these);
 // import them here. Keep title and isRecommended here.
 export const CONFIG_PRESETS: ConfigPreset[] = [

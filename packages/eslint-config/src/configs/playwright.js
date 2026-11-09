@@ -5,12 +5,12 @@ import { defineConfig } from 'eslint/config';
 import { PLAYWRIGHT_FILE_PATTERNS } from '../lib/patterns.js';
 
 export default defineConfig({
-  name: 'code-pushup/playwright',
+  name: 'flowup/playwright',
   files: PLAYWRIGHT_FILE_PATTERNS,
   extends: [
     playwright.configs['flat/recommended'],
     {
-      name: 'code-pushup/playwright/customized',
+      name: 'flowup/playwright/customized',
       rules: {
         'playwright/no-conditional-expect': 'warn',
         'playwright/no-conditional-in-test': 'warn',
@@ -19,7 +19,7 @@ export default defineConfig({
       },
     },
     {
-      name: 'code-pushup/playwright/additional',
+      name: 'flowup/playwright/additional',
       rules: {
         'playwright/no-commented-out-tests': 'warn',
         'playwright/no-duplicate-hooks': 'warn',

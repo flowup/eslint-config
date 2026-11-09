@@ -28,7 +28,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/angular',
+    name: 'flowup/angular',
     files: TYPESCRIPT_FILE_PATTERNS,
     processor: angular.processInlineTemplates,
     languageOptions: {
@@ -38,7 +38,7 @@ export default defineConfig(
       ...angular.configs.tsRecommended,
       rxjs.configs.recommended,
       {
-        name: 'code-pushup/angular/customized',
+        name: 'flowup/angular/customized',
         rules: {
           '@angular-eslint/component-class-suffix': 'warn',
           '@angular-eslint/directive-class-suffix': 'warn',
@@ -68,7 +68,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/angular/disabled',
+        name: 'flowup/angular/disabled',
         rules: {
           '@typescript-eslint/class-methods-use-this': 'off',
           '@typescript-eslint/no-extraneous-class': 'off',
@@ -80,7 +80,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/angular/additional',
+        name: 'flowup/angular/additional',
         rules: {
           // https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin#rules
           '@angular-eslint/component-max-inline-declarations': 'warn',
@@ -119,13 +119,13 @@ export default defineConfig(
     ],
   },
   {
-    name: 'code-pushup/angular/template',
+    name: 'flowup/angular/template',
     files: HTML_FILE_PATTERNS,
     extends: [
       ...angular.configs.templateRecommended,
       ...angular.configs.templateAccessibility,
       {
-        name: 'code-pushup/angular/template/customized',
+        name: 'flowup/angular/template/customized',
         rules: {
           '@angular-eslint/template/eqeqeq': [
             'error',
@@ -135,7 +135,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/angular/template/additional',
+        name: 'flowup/angular/template/additional',
         rules: {
           // https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin-template#rules
           '@angular-eslint/template/conditional-complexity': 'warn',
@@ -160,18 +160,18 @@ export default defineConfig(
     ],
   },
   {
-    name: 'code-pushup/angular/tests',
+    name: 'flowup/angular/tests',
     files: TEST_FILE_PATTERNS,
     ignores: negatePatterns(TYPESCRIPT_FILE_PATTERNS),
     extends: [
       {
-        name: 'code-pushup/angular/tests/customized',
+        name: 'flowup/angular/tests/customized',
         rules: {
           '@angular-eslint/no-lifecycle-call': 'warn',
         },
       },
       {
-        name: 'code-pushup/angular/tests/disabled',
+        name: 'flowup/angular/tests/disabled',
         rules: {
           '@angular-eslint/component-max-inline-declarations': 'off',
           '@angular-eslint/prefer-on-push-component-change-detection': 'off',
@@ -184,7 +184,7 @@ export default defineConfig(
   },
   {
     // duplicated from typescript config to re-apply over angular's naming convention
-    name: 'code-pushup/angular/storybook/customized',
+    name: 'flowup/angular/storybook/customized',
     files: STORYBOOK_FILE_PATTERNS,
     ignores: negatePatterns(TYPESCRIPT_FILE_PATTERNS),
     rules: {
@@ -195,7 +195,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/angular/components/customized',
+    name: 'flowup/angular/components/customized',
     files: [ANGULAR_COMPONENT_FILE_PATTERNS],
     rules: {
       'max-lines': [
@@ -205,14 +205,14 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/angular/pipes/customized',
+    name: 'flowup/angular/pipes/customized',
     files: [ANGULAR_PIPE_FILE_PATTERNS],
     rules: {
       'functional/prefer-tacit': 'off',
     },
   },
   {
-    name: 'code-pushup/angular/templates/inline/disabled',
+    name: 'flowup/angular/templates/inline/disabled',
     files: TEST_FILE_PATTERNS_INLINE_TEMPLATES,
     rules: {
       '@angular-eslint/template/no-inline-styles': 'off',

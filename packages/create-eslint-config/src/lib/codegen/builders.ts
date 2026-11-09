@@ -10,7 +10,7 @@ import type {
 } from '../types.js';
 import { singleQuote } from '../utils.js';
 
-export const PRESET_MODULE_PREFIX = '@code-pushup/eslint-config/';
+export const PRESET_MODULE_PREFIX = '@flowup/eslint-config/';
 
 export type FlatConfigEntry = {
   ast: t.SpreadElement | t.ObjectExpression;

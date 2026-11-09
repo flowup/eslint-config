@@ -23,7 +23,7 @@ import { convertErrorsToWarnings } from '../lib/utils.js';
 
 export default defineConfig(
   {
-    name: 'code-pushup/javascript',
+    name: 'flowup/javascript',
     files: JAVASCRIPT_EXTENDED_FILE_PATTERNS,
     extends: [
       eslint.configs.recommended,
@@ -32,13 +32,13 @@ export default defineConfig(
       sonarjs.configs.recommended,
       promise.configs['flat/recommended'],
       {
-        name: 'code-pushup/javascript/unused-disable',
+        name: 'flowup/javascript/unused-disable',
         linterOptions: {
           reportUnusedDisableDirectives: 'warn',
         },
       },
       {
-        name: 'code-pushup/javascript/customized',
+        name: 'flowup/javascript/customized',
         plugins: {
           unicorn,
         },
@@ -85,7 +85,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/javascript/disabled',
+        name: 'flowup/javascript/disabled',
         rules: {
           'no-case-declarations': 'off',
           '@typescript-eslint/consistent-indexed-object-style': 'off',
@@ -104,7 +104,7 @@ export default defineConfig(
         },
       },
       {
-        name: 'code-pushup/javascript/additional',
+        name: 'flowup/javascript/additional',
         plugins: {
           functional,
         },
@@ -205,7 +205,7 @@ export default defineConfig(
     ],
   },
   {
-    name: 'code-pushup/javascript/tests/disabled',
+    name: 'flowup/javascript/tests/disabled',
     files: TEST_FILE_PATTERNS,
     rules: {
       '@typescript-eslint/no-magic-numbers': 'off',
@@ -222,14 +222,14 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/javascript/tests/customized',
+    name: 'flowup/javascript/tests/customized',
     files: TEST_FILE_PATTERNS,
     rules: {
       'max-nested-callbacks': ['warn', { max: 10 }],
     },
   },
   {
-    name: 'code-pushup/javascript/mocks/disabled',
+    name: 'flowup/javascript/mocks/disabled',
     files: MOCKS_FILE_PATTERNS,
     rules: {
       'import/no-commonjs': 'off',
@@ -238,7 +238,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/javascript/configs/disabled',
+    name: 'flowup/javascript/configs/disabled',
     files: CONFIG_FILE_PATTERNS,
     rules: {
       'import/no-anonymous-default-export': 'off',
@@ -250,7 +250,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/javascript/generated/disabled',
+    name: 'flowup/javascript/generated/disabled',
     files: GENERATED_FILE_PATTERNS,
     rules: {
       '@typescript-eslint/ban-tslint-comment': 'off',
@@ -258,7 +258,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/javascript/json/disabled',
+    name: 'flowup/javascript/json/disabled',
     files: JSON_FILE_PATTERNS,
     rules: {
       'max-lines': 'off',
@@ -273,7 +273,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/javascript/cjs/disabled',
+    name: 'flowup/javascript/cjs/disabled',
     files: COMMONJS_FILE_PATTERNS,
     rules: {
       'import/no-commonjs': 'off',
@@ -282,7 +282,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/javascript/dts/disabled',
+    name: 'flowup/javascript/dts/disabled',
     files: TYPESCRIPT_DECLARATION_FILE_PATTERNS,
     rules: {
       '@typescript-eslint/consistent-type-definitions': 'off',
@@ -290,7 +290,7 @@ export default defineConfig(
     },
   },
   {
-    name: 'code-pushup/javascript/svelte/disabled',
+    name: 'flowup/javascript/svelte/disabled',
     files: SVELTE_FILE_PATTERNS,
     rules: {
       'import/no-mutable-exports': 'off',

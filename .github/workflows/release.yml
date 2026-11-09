@@ -20,7 +20,7 @@ jobs:
     env:
       NX_NON_NATIVE_HASHER: true
     steps:
-      - name: Authenticate as "Code PushUp Bot" GitHub App
+      - name: Authenticate as "FlowUp Bot" GitHub App
         uses: actions/create-github-app-token@v3
         id: app-token
         with:

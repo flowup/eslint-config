@@ -6,7 +6,7 @@ import globals from 'globals';
 import javascript from './javascript.js';
 
 export default defineConfig(...javascript, {
-  name: 'code-pushup/node',
+  name: 'flowup/node',
   languageOptions: {
     globals: globals.node,
   },

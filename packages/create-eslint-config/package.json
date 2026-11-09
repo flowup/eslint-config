@@ -1,7 +1,7 @@
 {
-  "name": "@code-pushup/create-eslint-config",
+  "name": "@flowup/create-eslint-config",
   "version": "0.17.3",
-  "description": "Interactive setup wizard for @code-pushup/eslint-config",
+  "description": "Interactive setup wizard for @flowup/eslint-config",
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -11,20 +11,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/code-pushup/eslint-config.git",
+    "url": "git+https://github.com/flowup/eslint-config.git",
     "directory": "packages/create-eslint-config"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "setup-wizard",
-    "code-pushup"
+    "flowup"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/code-pushup/eslint-config/issues?q=is%3Aissue%20state%3Aopen%20type%3ABug%20label%3A\"🧩%20create-eslint-config\""
+    "url": "https://github.com/flowup/eslint-config/issues?q=is%3Aissue%20state%3Aopen%20type%3ABug%20label%3A\"🧩%20create-eslint-config\""
   },
-  "homepage": "https://github.com/code-pushup/eslint-config/tree/main/packages/create-eslint-config#readme",
+  "homepage": "https://github.com/flowup/eslint-config/tree/main/packages/create-eslint-config#readme",
   "dependencies": {
     "@babel/types": "^7.25.0",
     "@inquirer/prompts": "^8.4.1",
