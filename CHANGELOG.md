@@ -1,3 +1,28 @@
+## 0.18.0 (2026-11-11)
+
+### 🚀 Features
+
+- add support for NgRx 18 ([#23](https://github.com/flowup/eslint-config/pull/23))
+- **create-eslint-config:** implement setup wizard ([#51](https://github.com/flowup/eslint-config/pull/51))
+- **create-eslint-config:** extend existing config ([#52](https://github.com/flowup/eslint-config/pull/52))
+
+### 🩹 Fixes
+
+- **create-eslint-config:** correct package metadata after monorepo migration and release ([4c3256d](https://github.com/flowup/eslint-config/commit/4c3256d))
+- **create-eslint-config:** sync version with eslint-config ([55467ee](https://github.com/flowup/eslint-config/commit/55467ee))
+- **create-eslint-config:** add license file ([a927994](https://github.com/flowup/eslint-config/commit/a927994))
+- **eslint-config:** correct package metadata after monorepo migration ([faf6d78](https://github.com/flowup/eslint-config/commit/faf6d78))
+- **eslint-config:** enable type-checked rules ([51cc25a](https://github.com/flowup/eslint-config/commit/51cc25a))
+- **eslint-config:** disable no-template-curly-in-string for .json files ([b93b60a](https://github.com/flowup/eslint-config/commit/b93b60a))
+- **eslint-config:** lint GraphQL in tagged templates and parse .graphql files ([ba5eba8](https://github.com/flowup/eslint-config/commit/ba5eba8))
+
+### ❤️ Thank You
+
+- Edouard Maleix
+- Hanna Skryl @hanna-skryl
+- Matěj Chalk
+- Matyáš Anton
+
 ## 0.17.3 (2026-11-03)
 
 ### 🩹 Fixes

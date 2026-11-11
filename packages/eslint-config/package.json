@@ -1,6 +1,6 @@
 {
   "name": "@flowup/eslint-config",
-  "version": "0.17.3",
+  "version": "0.18.0",
   "description": "Recommended ESLint presets by FlowUp",
   "publishConfig": {
     "access": "public"
