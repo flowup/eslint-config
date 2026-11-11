@@ -46,7 +46,7 @@ To use the default config, follow these steps:
 1. You must first install all the required peer dependencies (if you haven't already):
 
    ```sh
-   npm install -D eslint @eslint/js eslint-plugin-{functional,import,promise,sonarjs,unicorn} globals typescript-eslint
+   npm install -D eslint @eslint/js eslint-plugin-{functional,import-x,promise,sonarjs,unicorn} globals typescript-eslint
    ```
 
 2. Install `@flowup/eslint-config` with:
@@ -75,7 +75,7 @@ All peer dependencies used by `@flowup/eslint-config` are listed below, along wi
 |        ![eslint](./docs/icons/material/eslint.png)         | [eslint](https://www.npmjs.com/package/eslint)                                                       |                            `^9.0.0`                            |    ✅     |
 |        ![eslint](./docs/icons/material/eslint.png)         | [@eslint/js](https://www.npmjs.com/package/@eslint/js)                                               |                            `^9.0.0`                            |    ✅     |
 |         ![lambda](./docs/icons/icons8/lambda.png)          | [eslint-plugin-functional](https://www.npmjs.com/package/eslint-plugin-functional)                   |         `^7.0.0 \|\| ^8.0.0 \|\| ^9.0.0 \|\| ^10.0.0`          |    ✅     |
-|         ![import](./docs/icons/icons8/import.png)          | [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)                           |                           `^2.31.0`                            |    ✅     |
+|         ![import](./docs/icons/icons8/import.png)          | [eslint-plugin-import-x](https://www.npmjs.com/package/eslint-plugin-import-x)                       |                           `^4.18.0`                            |    ✅     |
 |         ![import](./docs/icons/icons8/import.png)          | [eslint-import-resolver-typescript](https://www.npmjs.com/package/eslint-import-resolver-typescript) |                      `^3.0.0 \|\| ^4.0.0`                      |          |
 |        ![promise](./docs/icons/icons8/promise.png)         | [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)                         |                           `>=6.4.0`                            |    ✅     |
 |           ![sonar](./docs/icons/other/sonar.png)           | [eslint-plugin-sonarjs](https://www.npmjs.com/package/eslint-plugin-sonarjs)                         |                            `^1.0.4`                            |    ✅     |

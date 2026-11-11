@@ -50,9 +50,10 @@ describe('javascript config', () => {
 
   it('should have rule disabled if known config file pattern matches', async () => {
     const config = await loadConfig('jest.config.ts');
-    expect(config.rules).toHaveProperty('import/no-anonymous-default-export', [
-      0,
-    ]);
+    expect(config.rules).toHaveProperty(
+      'import-x/no-anonymous-default-export',
+      [0],
+    );
   });
 
   it('should have rule disabled if generated file pattern matches', async () => {

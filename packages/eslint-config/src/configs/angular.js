@@ -113,9 +113,9 @@ export default defineConfig(
           'rxjs-x/no-compat': 'warn',
           'rxjs-x/no-exposed-subjects': 'warn',
           'rxjs-x/no-floating-observables': 'error',
-          // https://github.com/import-js/eslint-plugin-import#rules
-          'import/no-namespace': 'error',
-          'import/no-nodejs-modules': 'error',
+          // https://github.com/un-ts/eslint-plugin-import-x#rules
+          'import-x/no-namespace': 'error',
+          'import-x/no-nodejs-modules': 'error',
         },
       },
     ],

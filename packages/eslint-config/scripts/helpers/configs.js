@@ -100,7 +100,7 @@ export default defineConfig(
       ],
     )}`,
   )}${md.paragraph(
-    md`Similarly, you may need to ${md.link('https://www.npmjs.com/package/eslint-plugin-import#typescript', md`configure a tsconfig file for ${md.code('eslint-plugin-import')} rules`)} (e.g. if using path aliases in ${md.code('.ts')} files):${md.list(
+    md`Similarly, you may need to ${md.link('https://www.npmjs.com/package/eslint-plugin-import#typescript', md`configure a tsconfig file for ${md.code('eslint-plugin-import-x')} rules`)} (e.g. if using path aliases in ${md.code('.ts')} files):${md.list(
       [
         md`Install additional import resolver:${md.codeBlock('sh', 'npm i -D eslint-import-resolver-typescript')}`,
         md`Example ${md.code(eslintConfig)} for Nx monorepo:${md.codeBlock(
@@ -109,7 +109,7 @@ export default defineConfig(
   // ...
   {
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         typescript: {
           alwaysTryTypes: true,
           project: 'tsconfig.base.json'

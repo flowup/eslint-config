@@ -22,7 +22,7 @@ export function packageIcon(pkg) {
     return pluginIcon(pluginAlias);
   }
   if (pkg.startsWith('eslint-import-resolver')) {
-    return pluginIcon('import');
+    return pluginIcon('import-x');
   }
   throw new Error(`No icon found for package ${pkg}`);
 }

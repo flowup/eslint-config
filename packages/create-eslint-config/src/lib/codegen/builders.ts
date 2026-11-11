@@ -100,7 +100,7 @@ function buildTypescriptEntries(
   }`);
   const settingsBlock = parseObjectExpression(`{
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         typescript: {
           alwaysTryTypes: true,
           project: ${singleQuote(ts.tsconfigPath)},

@@ -33,7 +33,7 @@ describe('generateEslintConfig', () => {
         },
         {
           settings: {
-            'import/resolver': {
+            'import-x/resolver': {
               typescript: {
                 alwaysTryTypes: true,
                 project: 'tsconfig.json',
@@ -215,7 +215,7 @@ describe('extendEslintConfig', () => {
         },
         {
           settings: {
-            'import/resolver': {
+            'import-x/resolver': {
               typescript: {
                 alwaysTryTypes: true,
                 project: 'tsconfig.json',

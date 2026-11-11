@@ -38,7 +38,7 @@ Config for strict **TypeScript** projects.
      );
      ```
 
-   Similarly, you may need to [configure a tsconfig file for `eslint-plugin-import` rules](https://www.npmjs.com/package/eslint-plugin-import#typescript) (e.g. if using path aliases in `.ts` files):
+   Similarly, you may need to [configure a tsconfig file for `eslint-plugin-import-x` rules](https://www.npmjs.com/package/eslint-plugin-import#typescript) (e.g. if using path aliases in `.ts` files):
    
    - Install additional import resolver:
    
@@ -53,7 +53,7 @@ Config for strict **TypeScript** projects.
        // ...
        {
          settings: {
-           'import/resolver': {
+           'import-x/resolver': {
              typescript: {
                alwaysTryTypes: true,
                project: 'tsconfig.base.json'
