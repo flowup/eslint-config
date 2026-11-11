@@ -94,7 +94,9 @@ export default defineConfig(
             { type: 'attribute', style: 'camelCase' },
           ],
           '@angular-eslint/no-attribute-decorator': 'warn',
-          '@angular-eslint/no-conflicting-lifecycle': 'error',
+          ...('no-conflicting-lifecycle' in (angular.tsPlugin.rules ?? {}) && {
+            '@angular-eslint/no-conflicting-lifecycle': 'error',
+          }),
           '@angular-eslint/no-lifecycle-call': 'error',
           '@angular-eslint/no-pipe-impure': 'warn',
           '@angular-eslint/no-queries-metadata-property': 'warn',

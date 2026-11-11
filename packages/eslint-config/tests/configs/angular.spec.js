@@ -28,10 +28,7 @@ describe('angular config', () => {
 
   it('should have explicitly added rule for TS file', async () => {
     const config = await loadConfig('src/app/app.component.ts');
-    expect(config.rules).toHaveProperty(
-      '@angular-eslint/prefer-on-push-component-change-detection',
-      [1],
-    );
+    expect(config.rules).toHaveProperty('@angular-eslint/no-pipe-impure', [1]);
   });
 
   it('should have explicitly added rule for HTML file', async () => {
@@ -75,7 +72,7 @@ describe('angular config', () => {
       'src/app/components/accordion/accordion.component.stories.ts',
     );
     expect(config.rules).toHaveProperty(
-      '@angular-eslint/component-max-inline-declarations',
+      '@angular-eslint/use-component-selector',
       [0],
     );
   });

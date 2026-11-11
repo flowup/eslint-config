@@ -53,9 +53,9 @@ Config for **Angular** projects using **NgRx** library.
 
 4. Refer to [step 3 in TypeScript config's setup docs](./typescript.md#🏗️-setup) for how to set up tsconfig properly.
 
-## 📏 Rules (489)
+## 📏 Rules (490)
 
-**459** rules are included from [`angular` config](./angular.md#📏-rules-459). For brevity, only the **30** additional rules are listed in this document.
+**460** rules are included from [`angular` config](./angular.md#📏-rules-460). For brevity, only the **30** additional rules are listed in this document.
 
 > 🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).<br>💡 Manually fixable by [editor suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).<br>🧪🚫 Disabled for [test files](../README.md#🧪-test-overrides).<br>🧪⚠️ Severity lessened to warning for [test files](../README.md#🧪-test-overrides).
 
@@ -66,9 +66,9 @@ Config for **Angular** projects using **NgRx** library.
 |              [![@ngrx](./icons/other/ngrx.png)](https://ngrx.io/guide/eslint-plugin)               | [avoid-cyclic-effects](https://ngrx.io/guide/eslint-plugin/rules/avoid-cyclic-effects)<br />Avoid `Effect` that re-emit filtered actions.                                                |         |         |           |
 |              [![@ngrx](./icons/other/ngrx.png)](https://ngrx.io/guide/eslint-plugin)               | [avoid-duplicate-actions-in-reducer](https://ngrx.io/guide/eslint-plugin/rules/avoid-duplicate-actions-in-reducer)<br />A `Reducer` should handle an `Action` once.                      |         |   💡    |           |
 |              [![@ngrx](./icons/other/ngrx.png)](https://ngrx.io/guide/eslint-plugin)               | [no-effects-in-providers](https://ngrx.io/guide/eslint-plugin/rules/no-effects-in-providers)<br />`Effect` should not be listed as a provider if it is added to the `EffectsModule`.     |         |   🔧    |           |
-| [![rxjs-x](./icons/other/rxjs.png)](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x#readme) | [no-unsafe-catch](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x/blob/v0.8.5/docs/rules/no-unsafe-catch.md)<br />Disallow unsafe `catchError` usage in effects and epics.        |         |         |           |
-| [![rxjs-x](./icons/other/rxjs.png)](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x#readme) | [no-unsafe-first](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x/blob/v0.8.5/docs/rules/no-unsafe-first.md)<br />Disallow unsafe `first`/`take` usage in effects and epics.      |         |         |           |
-| [![rxjs-x](./icons/other/rxjs.png)](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x#readme) | [no-unsafe-switchmap](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x/blob/v0.8.5/docs/rules/no-unsafe-switchmap.md)<br />Disallow unsafe `switchMap` usage in effects and epics. |         |         |           |
+| [![rxjs-x](./icons/other/rxjs.png)](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x#readme) | [no-unsafe-catch](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x/blob/v0.9.4/docs/rules/no-unsafe-catch.md)<br />Disallow unsafe `catchError` usage in effects and epics.        |         |         |           |
+| [![rxjs-x](./icons/other/rxjs.png)](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x#readme) | [no-unsafe-first](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x/blob/v0.9.4/docs/rules/no-unsafe-first.md)<br />Disallow unsafe `first`/`take` usage in effects and epics.      |         |         |           |
+| [![rxjs-x](./icons/other/rxjs.png)](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x#readme) | [no-unsafe-switchmap](https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x/blob/v0.9.4/docs/rules/no-unsafe-switchmap.md)<br />Disallow unsafe `switchMap` usage in effects and epics. |         |         |           |
 
 ### ⚠️ Warnings (24)
 

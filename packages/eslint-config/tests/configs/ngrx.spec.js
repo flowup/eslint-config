@@ -22,10 +22,7 @@ describe('ngrx config', () => {
 
   it('should have rule from extended angular config', async () => {
     const config = await loadConfig();
-    expect(config.rules).toHaveProperty(
-      '@angular-eslint/prefer-on-push-component-change-detection',
-      [1],
-    );
+    expect(config.rules).toHaveProperty('@angular-eslint/no-pipe-impure', [1]);
   });
 
   it('should have rule from extended recommended ngrx config', async () => {
