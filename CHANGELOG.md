@@ -1,3 +1,13 @@
+## 0.19.0 (2026-11-11)
+
+### 🚀 Features
+
+- **eslint-config:** add support for angular/ngrx v22 and functional v10 ([17ed7c0](https://github.com/flowup/eslint-config/commit/17ed7c0))
+
+### ❤️ Thank You
+
+- Matěj Chalk
+
 ## 0.18.0 (2026-11-11)
 
 ### 🚀 Features
