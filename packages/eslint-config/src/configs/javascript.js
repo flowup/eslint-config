@@ -2,7 +2,7 @@
 
 import eslint from '@eslint/js';
 import functional from 'eslint-plugin-functional';
-import * as importPlugin from 'eslint-plugin-import';
+import { importX } from 'eslint-plugin-import-x';
 import promise from 'eslint-plugin-promise';
 import sonarjs from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
@@ -28,7 +28,7 @@ export default defineConfig(
     extends: [
       eslint.configs.recommended,
       ...tseslint.configs.recommended,
-      importPlugin.flatConfigs.recommended,
+      importX.flatConfigs.recommended,
       sonarjs.configs.recommended,
       promise.configs['flat/recommended'],
       {
@@ -99,7 +99,7 @@ export default defineConfig(
           'unicorn/no-await-expression-member': 'off',
           'unicorn/no-nested-ternary': 'off',
           'unicorn/prefer-string-replace-all': 'off',
-          'unicorn/no-anonymous-default-export': 'off', // duplicate of import/no-anonymous-default-export
+          'unicorn/no-anonymous-default-export': 'off', // duplicate of import-x/no-anonymous-default-export
           'unicorn/empty-brace-spaces': 'off',
         },
       },
@@ -178,24 +178,24 @@ export default defineConfig(
           '@typescript-eslint/prefer-function-type': 'warn',
           '@typescript-eslint/no-shadow': 'warn',
 
-          // https://github.com/import-js/eslint-plugin-import#rules
+          // https://github.com/un-ts/eslint-plugin-import-x#rules
           // probably too strict due to low adoption of strict ESM
-          // 'import/extensions': [
+          // 'import-x/extensions': [
           //   'warn',
           //   'always',
           //   { ignorePackages: true, checkTypeImports: true },
           // ],
-          'import/max-dependencies': ['warn', { ignoreTypeImports: true }],
-          'import/no-absolute-path': 'error',
-          'import/no-amd': 'error',
-          'import/no-anonymous-default-export': 'warn',
-          'import/no-commonjs': 'error',
-          'import/no-cycle': 'error',
-          'import/no-mutable-exports': 'error',
-          'import/no-named-default': 'warn',
-          'import/no-self-import': 'error',
-          'import/no-unassigned-import': 'warn',
-          'import/no-useless-path-segments': 'warn',
+          'import-x/max-dependencies': ['warn', { ignoreTypeImports: true }],
+          'import-x/no-absolute-path': 'error',
+          'import-x/no-amd': 'error',
+          'import-x/no-anonymous-default-export': 'warn',
+          'import-x/no-commonjs': 'error',
+          'import-x/no-cycle': 'error',
+          'import-x/no-mutable-exports': 'error',
+          'import-x/no-named-default': 'warn',
+          'import-x/no-self-import': 'error',
+          'import-x/no-unassigned-import': 'warn',
+          'import-x/no-useless-path-segments': 'warn',
 
           // https://github.com/eslint-functional/eslint-plugin-functional#rules
           'functional/no-let': 'warn',
@@ -232,7 +232,7 @@ export default defineConfig(
     name: 'flowup/javascript/mocks/disabled',
     files: MOCKS_FILE_PATTERNS,
     rules: {
-      'import/no-commonjs': 'off',
+      'import-x/no-commonjs': 'off',
       'unicorn/prefer-module': 'off',
       '@typescript-eslint/no-require-imports': 'off',
     },
@@ -241,9 +241,9 @@ export default defineConfig(
     name: 'flowup/javascript/configs/disabled',
     files: CONFIG_FILE_PATTERNS,
     rules: {
-      'import/no-anonymous-default-export': 'off',
-      'import/no-unassigned-import': 'off',
-      'import/no-commonjs': 'off',
+      'import-x/no-anonymous-default-export': 'off',
+      'import-x/no-unassigned-import': 'off',
+      'import-x/no-commonjs': 'off',
       'unicorn/no-abusive-eslint-disable': 'off',
       'unicorn/prefer-module': 'off',
       '@typescript-eslint/no-require-imports': 'off',
@@ -276,7 +276,7 @@ export default defineConfig(
     name: 'flowup/javascript/cjs/disabled',
     files: COMMONJS_FILE_PATTERNS,
     rules: {
-      'import/no-commonjs': 'off',
+      'import-x/no-commonjs': 'off',
       'unicorn/prefer-module': 'off',
       '@typescript-eslint/no-require-imports': 'off',
     },
@@ -293,7 +293,7 @@ export default defineConfig(
     name: 'flowup/javascript/svelte/disabled',
     files: SVELTE_FILE_PATTERNS,
     rules: {
-      'import/no-mutable-exports': 'off',
+      'import-x/no-mutable-exports': 'off',
       'functional/no-let': 'off',
     },
   },

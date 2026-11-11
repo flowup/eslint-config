@@ -1,6 +1,6 @@
 // @ts-check
 
-import * as importPlugin from 'eslint-plugin-import';
+import { importX } from 'eslint-plugin-import-x';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import {
@@ -30,7 +30,7 @@ export default defineConfig(
     extends: [
       ...tseslint.configs.recommendedTypeChecked,
       ...tseslint.configs.strictTypeChecked,
-      importPlugin.flatConfigs.typescript,
+      importX.flatConfigs.typescript,
       {
         name: 'flowup/typescript/customized',
         rules: {

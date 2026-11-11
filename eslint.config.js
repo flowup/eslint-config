@@ -14,7 +14,7 @@ export default defineConfig(
   ...node,
   ...vitest,
   ...nxPlugin.configs['flat/base'],
-  { settings: { 'import/resolver': { typescript: true, node: true } } },
+  { settings: { 'import-x/resolver': { typescript: true, node: true } } },
   {
     // tests need only be compatible with local Node version
     // publishable packages should pick up version range from "engines" in their package.json
@@ -54,7 +54,7 @@ export default defineConfig(
     // in bin files, imports with side effects are allowed
     files: ['**/bin.js'],
     rules: {
-      'import/no-unassigned-import': 'off',
+      'import-x/no-unassigned-import': 'off',
     },
   },
   {

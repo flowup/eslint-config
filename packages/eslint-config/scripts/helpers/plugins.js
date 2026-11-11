@@ -12,7 +12,7 @@ const pluginIcons = {
   cypress: 'material/cypress',
   deprecation: 'icons8/expired',
   functional: 'icons8/lambda',
-  import: 'icons8/import',
+  'import-x': 'icons8/import',
   jest: 'material/jest',
   'jest-formatting': 'icons8/test',
   'jsx-a11y': 'icons8/accessibility',
@@ -46,7 +46,7 @@ const pluginDocsUrls = {
   deprecation: 'https://github.com/gund/eslint-plugin-deprecation#readme',
   functional:
     'https://github.com/eslint-functional/eslint-plugin-functional#readme',
-  import: 'https://github.com/import-js/eslint-plugin-import#readme',
+  'import-x': 'https://github.com/un-ts/eslint-plugin-import-x#readme',
   jest: 'https://github.com/jest-community/eslint-plugin-jest#readme',
   'jest-formatting':
     'https://github.com/dangreenisrael/eslint-plugin-jest-formatting#readme',

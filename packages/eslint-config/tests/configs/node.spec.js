@@ -21,7 +21,7 @@ describe('node config', () => {
 
   it('should have rule from extended base config', async () => {
     const config = await loadConfig();
-    expect(config.rules).toHaveProperty('import/no-commonjs', [2]);
+    expect(config.rules).toHaveProperty('import-x/no-commonjs', [2]);
   });
 
   it('should not include any rule which requires type checking', async () => {
