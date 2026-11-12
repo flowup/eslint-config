@@ -1,3 +1,13 @@
+## 0.20.0 (2026-11-12)
+
+### 🚀 Features
+
+- **eslint-config:** replace old import plugin with newer alternative ([50c337e](https://github.com/flowup/eslint-config/commit/50c337e))
+
+### ❤️ Thank You
+
+- Matěj Chalk
+
 ## 0.19.0 (2026-11-11)
 
 ### 🚀 Features

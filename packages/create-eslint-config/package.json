@@ -1,6 +1,6 @@
 {
   "name": "@flowup/create-eslint-config",
-  "version": "0.19.0",
+  "version": "0.20.0",
   "description": "Interactive setup wizard for @flowup/eslint-config",
   "type": "module",
   "main": "./src/index.js",
