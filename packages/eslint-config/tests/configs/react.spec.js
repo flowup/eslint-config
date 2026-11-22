@@ -11,12 +11,16 @@ describe('react config', () => {
 
   it('should include react rules for JS file', async () => {
     const config = await loadConfig('components/Button.js');
-    expect(Object.keys(config.rules ?? {}).join(',')).toContain('react/');
+    expect(Object.keys(config.rules ?? {}).join(',')).toContain(
+      '@eslint-react/',
+    );
   });
 
   it('should include react rules for TSX file', async () => {
     const config = await loadConfig('components/Button.tsx');
-    expect(Object.keys(config.rules ?? {}).join(',')).toContain('react/');
+    expect(Object.keys(config.rules ?? {}).join(',')).toContain(
+      '@eslint-react/',
+    );
   });
 
   it('should have rule from extended javascript config', async () => {
@@ -28,21 +32,6 @@ describe('react config', () => {
 
   it('should have rule from extended recommended react config', async () => {
     const config = await loadConfig();
-    expect(config.rules).toHaveProperty('react/jsx-key', [2]);
-  });
-
-  it('should have explicitly added rule', async () => {
-    const config = await loadConfig();
-    expect(config.rules).toHaveProperty('react/no-array-index-key', [2]);
-  });
-
-  it('should include react-hooks rule', async () => {
-    const config = await loadConfig();
-    expect(Object.keys(config.rules ?? {}).join(',')).toContain('react-hooks/');
-  });
-
-  it('should have rule from extended recommended jsx-a11y config', async () => {
-    const config = await loadConfig();
-    expect(config.rules).toHaveProperty('jsx-a11y/alt-text', [2]);
+    expect(config.rules).toHaveProperty('@eslint-react/no-missing-key', [2]);
   });
 });

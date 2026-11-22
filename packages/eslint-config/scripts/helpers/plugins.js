@@ -4,6 +4,7 @@
 const pluginIcons = {
   '@angular-eslint': 'material/angular',
   '@angular-eslint/template': 'material/angular_component',
+  '@eslint-react': 'material/react',
   '@graphql-eslint': 'material/graphql',
   '@ngrx': 'other/ngrx',
   '@rx-angular': 'other/rx-angular',
@@ -37,6 +38,7 @@ const pluginDocsUrls = {
     'https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin#readme',
   '@angular-eslint/template':
     'https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin-template#readme',
+  '@eslint-react': 'https://github.com/Rel1cx/eslint-react#readme',
   '@graphql-eslint': 'https://the-guild.dev/graphql/eslint/docs',
   '@ngrx': 'https://ngrx.io/guide/eslint-plugin',
   '@rx-angular': 'https://www.rx-angular.io/docs/eslint-plugin',
