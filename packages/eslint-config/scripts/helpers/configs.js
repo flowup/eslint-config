@@ -1,5 +1,4 @@
 // @ts-check
-/* eslint-disable sonarjs/no-nested-template-literals */
 
 import { md } from 'build-md';
 import { getEnabledRuleIds } from './rules.js';

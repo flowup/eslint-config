@@ -121,7 +121,6 @@ function rulesDocs(config, rules, extended, options) {
               `./${alias}.md#📏-rules-${rulesCount}`,
               md`${md.code(
                 alias,
-                // eslint-disable-next-line sonarjs/no-nested-template-literals
               )} config${length > 1 ? ` (${rulesCount})` : ''}`.toString(),
             ),
           )
@@ -130,7 +129,6 @@ function rulesDocs(config, rules, extended, options) {
           )}. For brevity, only the ${md.bold(rules.length.toString())} additional rules are listed in this document.`,
     )
     .quote(
-      // eslint-disable-next-line sonarjs/no-nested-template-literals
       md`🔧 Automatically fixable by the ${md.link('https://eslint.org/docs/user-guide/command-line-interface#--fix', md`${md.code('--fix')} CLI option`)}.<br>💡 Manually fixable by ${md.link('https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions', 'editor suggestions')}.${options.hideOverrides ? '' : md`<br>🧪🚫 Disabled for ${md.link(testGlobsLink, 'test files')}.<br>🧪⚠️ Severity lessened to warning for ${md.link(testGlobsLink, 'test files')}.`}`,
     )
     .$if(errors.length > 0, doc =>

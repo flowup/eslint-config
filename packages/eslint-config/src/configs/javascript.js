@@ -4,7 +4,6 @@ import eslint from '@eslint/js';
 import functional from 'eslint-plugin-functional';
 import { importX } from 'eslint-plugin-import-x';
 import promise from 'eslint-plugin-promise';
-import sonarjs from 'eslint-plugin-sonarjs';
 import unicorn from 'eslint-plugin-unicorn';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
@@ -29,7 +28,6 @@ export default defineConfig(
       eslint.configs.recommended,
       ...tseslint.configs.recommended,
       importX.flatConfigs.recommended,
-      sonarjs.configs.recommended,
       promise.configs['flat/recommended'],
       {
         name: 'flowup/javascript/unused-disable',
@@ -64,22 +62,6 @@ export default defineConfig(
             'warn',
             { checkArrowFunctions: false },
           ],
-          'sonarjs/max-switch-cases': 'warn',
-          'sonarjs/no-collapsible-if': 'warn',
-          'sonarjs/no-duplicate-string': 'warn',
-          'sonarjs/no-inverted-boolean-check': 'warn',
-          'sonarjs/no-nested-switch': 'warn',
-          'sonarjs/no-nested-template-literals': 'warn',
-          'sonarjs/no-redundant-boolean': 'warn',
-          'sonarjs/no-redundant-jump': 'warn',
-          'sonarjs/no-same-line-conditional': 'warn',
-          'sonarjs/no-small-switch': 'warn',
-          'sonarjs/no-useless-catch': 'warn',
-          'sonarjs/prefer-immediate-return': 'warn',
-          'sonarjs/prefer-object-literal': 'warn',
-          'sonarjs/prefer-single-boolean-return': 'warn',
-          'sonarjs/prefer-while': 'warn',
-          ...('todo-tag' in sonarjs.rules && { 'sonarjs/todo-tag': 'warn' }),
           'promise/always-return': ['error', { ignoreLastCallback: true }],
           'promise/no-callback-in-promise': ['warn', { exceptions: ['next'] }],
         },
@@ -215,7 +197,6 @@ export default defineConfig(
       '@typescript-eslint/no-non-null-assertion': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
       '@typescript-eslint/no-empty-function': 'off',
-      'sonarjs/no-duplicate-string': 'off',
       'unicorn/consistent-function-scoping': 'off',
       'functional/no-let': 'off',
       'promise/catch-or-return': 'off',
@@ -266,8 +247,6 @@ export default defineConfig(
       'no-template-curly-in-string': 'off',
       '@typescript-eslint/no-unused-expressions': 'off',
       '@typescript-eslint/no-magic-numbers': 'off',
-      'sonarjs/no-duplicate-string': 'off',
-      'sonarjs/no-empty-test-file': 'off',
       'unicorn/filename-case': 'off',
       'unicorn/numeric-separators-style': 'off',
     },
