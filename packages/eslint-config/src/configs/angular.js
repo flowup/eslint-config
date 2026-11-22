@@ -110,7 +110,6 @@ export default defineConfig(
           '@angular-eslint/use-lifecycle-interface': 'warn',
           // https://github.com/JasonWeinzierl/eslint-plugin-rxjs-x#rules
           'rxjs-x/finnish': 'warn',
-          'rxjs-x/no-compat': 'warn',
           'rxjs-x/no-exposed-subjects': 'warn',
           'rxjs-x/no-floating-observables': 'error',
           // https://github.com/un-ts/eslint-plugin-import-x#rules

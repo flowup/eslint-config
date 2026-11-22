@@ -23,7 +23,6 @@ export default defineConfig(
     name: 'flowup/graphql',
     files: GRAPHQL_FILE_PATTERNS,
     plugins: {
-      // @ts-expect-error incompatible meta.docs.category type in rules (`CategoryType | CategoryType[]` not assignable to `string | undefined`)
       '@graphql-eslint': graphqlEslint,
     },
     ...(v3FlatConfigs
