@@ -20,9 +20,9 @@ Config for **React** projects.
    export default defineConfig(...react);
    ```
 
-## 📏 Rules (394)
+## 📏 Rules (364)
 
-**319** rules are included from [`javascript` config](./javascript.md#📏-rules-319). For brevity, only the **75** additional rules are listed in this document.
+**289** rules are included from [`javascript` config](./javascript.md#📏-rules-289). For brevity, only the **75** additional rules are listed in this document.
 
 > 🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).<br>💡 Manually fixable by [editor suggestions](https://eslint.org/docs/developer-guide/working-with-rules#providing-suggestions).<br>🧪🚫 Disabled for [test files](../README.md#🧪-test-overrides).<br>🧪⚠️ Severity lessened to warning for [test files](../README.md#🧪-test-overrides).
 
