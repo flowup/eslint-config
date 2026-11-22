@@ -17,7 +17,10 @@ describe('ngrx config', () => {
 
   it('should have explicitly added rule', async () => {
     const config = await loadConfig();
-    expect(config.rules).toHaveProperty('rxjs-x/no-unsafe-catch', [2]);
+    expect(config.rules).toHaveProperty('rxjs-x/no-unsafe-catch', [
+      2,
+      expect.any(Object),
+    ]);
   });
 
   it('should have rule from extended angular config', async () => {
