@@ -1,3 +1,15 @@
+## 0.21.0 (2026-11-23)
+
+### 🚀 Features
+
+- **eslint-config:** replace unmaintained react plugins with newer plugin ([9c66d87](https://github.com/flowup/eslint-config/commit/9c66d87))
+- **eslint-config:** remove sonarjs plugin ([b840752](https://github.com/flowup/eslint-config/commit/b840752))
+- **eslint-config:** support eslint 10 ([8b7c28a](https://github.com/flowup/eslint-config/commit/8b7c28a))
+
+### ❤️ Thank You
+
+- Matěj Chalk
+
 ## 0.20.0 (2026-11-12)
 
 ### 🚀 Features
